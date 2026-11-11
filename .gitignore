@@ -1,0 +1,4 @@
+logs/*.log
+logs/.lock
+logs/*.invalid.json
+__pycache__/

@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "group score result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "kind",
+    "stt",
+    "sheet_row",
+    "scores",
+    "total",
+    "tier",
+    "evidence",
+    "notes"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "pattern": "^GRP-[0-9]{8}-[0-9]{3}$"
+    },
+    "kind": {
+      "const": "group"
+    },
+    "stt": {
+      "type": "integer"
+    },
+    "sheet_row": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gates",
+        "icp",
+        "sell",
+        "active",
+        "engage",
+        "buyer",
+        "geo",
+        "spam"
+      ],
+      "properties": {
+        "gates": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "icp": {
+          "enum": [
+            0,
+            5,
+            15,
+            25,
+            null
+          ]
+        },
+        "sell": {
+          "enum": [
+            0,
+            10,
+            20,
+            null
+          ]
+        },
+        "active": {
+          "enum": [
+            2,
+            8,
+            15,
+            null
+          ]
+        },
+        "engage": {
+          "enum": [
+            2,
+            8,
+            15,
+            null
+          ]
+        },
+        "buyer": {
+          "enum": [
+            0,
+            5,
+            10,
+            null
+          ]
+        },
+        "geo": {
+          "enum": [
+            0,
+            5,
+            10,
+            null
+          ]
+        },
+        "spam": {
+          "enum": [
+            0,
+            5,
+            null
+          ]
+        }
+      }
+    },
+    "total": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "tier": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "Loại",
+        null
+      ]
+    },
+    "evidence": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

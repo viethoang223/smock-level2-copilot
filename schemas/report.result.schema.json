@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "weekly report result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "kind",
+    "report_file",
+    "numbers_source",
+    "notes"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "pattern": "^RPT-[0-9]{8}-[0-9]{3}$"
+    },
+    "kind": {
+      "const": "weekly_report"
+    },
+    "report_file": {
+      "type": "string"
+    },
+    "numbers_source": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
