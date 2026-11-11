@@ -69,7 +69,9 @@ def validate(p: pathlib.Path):
     if not inbox.exists() and not (ROOT / "done" / p.name).exists(): errs.append("không có file inbox tương ứng")
     keys = set(); walk_keys(o, keys)
     if keys & FORBID_KEYS: errs.append(f"có trường bị cấm: {sorted(keys & FORBID_KEYS)}")
-    text = json.dumps(o, ensure_ascii=False)
+    # Chỉ dò trong phần chữ tự do (mã việc, số dòng, link không tính)
+    free = [o.get("notes", ""), o.get("evidence", "")] + [v.get("caption", "") for v in o.get("variants", []) if isinstance(v, dict)]
+    text = "\n".join(x for x in free if isinstance(x, str))
     if EMAIL.search(text): errs.append("có địa chỉ email")
     if PHONE.search(text): errs.append("có số giống số điện thoại")
     if kind == "caption":
