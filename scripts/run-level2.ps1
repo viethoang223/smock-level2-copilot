@@ -1,4 +1,4 @@
-# Chạy cấp 2 không cần người: git pull -> Copilot CLI xử lý từng file inbox -> validate -> push.
+﻿# Chạy cấp 2 không cần người: git pull -> Copilot CLI xử lý từng file inbox -> validate -> push.
 # Task Scheduler: powershell -ExecutionPolicy Bypass -File C:\smock-level2-copilot\scripts\run-level2.ps1
 param([switch]$DryRun, [int]$MaxTasks = 15)
 $ErrorActionPreference = 'Stop'
