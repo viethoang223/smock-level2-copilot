@@ -34,6 +34,17 @@ Cấp 1 (n8n, 06:30) ─ git pull ─► kiểm lại ─► ghi sheet (caption 
 
 Kiểm cờ CLI bằng `copilot --help` sau mỗi lần cập nhật: tên cờ có thể đổi theo phiên bản.
 
+## Đổi tài khoản Copilot
+Cấp 2 dùng **một** tài khoản Copilot tại một thời điểm: tài khoản của chính người phụ trách máy cấp 2. Đổi tài khoản thì chỉ đổi token, không sửa code:
+1. Trên GitHub của tài khoản mới: Settings → Developer settings → Fine-grained token, quyền **Copilot Requests**, hạn 90 ngày.
+2. Trên máy cấp 2: `[Environment]::SetEnvironmentVariable('COPILOT_GITHUB_TOKEN','<token>','User')` (hoặc `copilot` → `/login`).
+3. Chạy `scripts\run-level2.ps1 -DryRun` rồi chạy thật một việc để chắc token dùng được.
+4. Ghi vào `logs/tai-khoan.md`: ngày đổi, tài khoản nào, ai phụ trách.
+
+Tài khoản dùng để `git push` repo này có thể khác tài khoản Copilot; chỉ cần có quyền ghi repo.
+
+**Không** xoay vòng nhiều tài khoản để cộng dồn hạn mức, và không dùng chung một tài khoản giữa nhiều người: điều khoản GitHub (và điều kiện gói Student) không cho phép, và vi phạm có thể làm khoá cả loạt tài khoản. Hết hạn mức → script dừng, việc còn trong `inbox/` làm tiếp lần sau; cần nhiều hơn thì nâng một tài khoản lên gói trả phí.
+
 ## Giới hạn
 - Từ 01/06/2026 Copilot tính theo GitHub AI Credits; hết hạn mức thì lệnh CLI báo lỗi (không tự chuyển sang model miễn phí). `run-level2.ps1` dừng khi gặp lỗi đầu tiên và ghi log, không chạy lại liên tục.
 - Mọi kết quả cấp 2 là **bản nháp**: caption vào "Chờ duyệt caption", điểm group vào "Đã chấm" chờ người duyệt. Không có gì của cấp 2 tự đi ra Facebook.
