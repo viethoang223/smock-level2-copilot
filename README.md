@@ -5,14 +5,14 @@ Repo này là "bàn làm việc" của cấp 2 trong kiến trúc 3 cấp nhánh
 ```
 Cấp 1 (n8n, 22:15) ── ghi việc ──► inbox/<loại>/<TASK_ID>.json ── git push
 Cấp 2 (Copilot, 05:30) ─ git pull ─► xử lý từng file ─► outbox/<loại>/<TASK_ID>.json ─► scripts/validate.py ─► git push
-Cấp 1 (n8n, 06:30) ─ git pull ─► kiểm lại ─► ghi sheet (caption = "Chờ duyệt caption") ─► chuyển file sang done/
+Cấp 1 (n8n, 06:30) ─ git pull ─► kiểm lại ─► ghi sheet (caption vào tab Pool Content SM, Phân loại "Phái sinh từ CGn (vN) – chờ duyệt") ─► chuyển file sang done/
 ```
 
 ## Ba loại việc
 
 | Loại | File vào | File ra | Prompt | Ai duyệt |
 | --- | --- | --- | --- | --- |
-| Phái sinh caption | `inbox/captions/CAP-*.json` | `outbox/captions/CAP-*.json` (3 biến thể) | `.github/prompts/caption.prompt.md` | Người dùng duyệt trên tab Content Queue trước khi dùng |
+| Phái sinh caption | `inbox/captions/CAP-*.json` | `outbox/captions/CAP-*.json` (3 biến thể) | `.github/prompts/caption.prompt.md` | Người dùng duyệt trên tab Pool Content SM (xoá chữ "chờ duyệt" là được dùng) |
 | Chấm group | `inbox/groups/GRP-*.json` + `data/group-text/gNN.txt` | `outbox/groups/GRP-*.json` (điểm + bằng chứng) | `.github/prompts/cham-group.prompt.md` | Người dùng duyệt tier |
 | Báo cáo tuần | `inbox/reports/RPT-*.json` + `data/weekly/*.csv` | `outbox/reports/RPT-*.json` + `.md` | `.github/prompts/bao-cao-tuan.prompt.md` | Người dùng đọc trước khi gửi sếp |
 
@@ -47,4 +47,4 @@ Tài khoản dùng để `git push` repo này có thể khác tài khoản Copil
 
 ## Giới hạn
 - Từ 01/06/2026 Copilot tính theo GitHub AI Credits; hết hạn mức thì lệnh CLI báo lỗi (không tự chuyển sang model miễn phí). `run-level2.ps1` dừng khi gặp lỗi đầu tiên và ghi log, không chạy lại liên tục.
-- Mọi kết quả cấp 2 là **bản nháp**: caption vào "Chờ duyệt caption", điểm group vào "Đã chấm" chờ người duyệt. Không có gì của cấp 2 tự đi ra Facebook.
+- Mọi kết quả cấp 2 là **bản nháp**: caption vào Pool Content SM kèm "chờ duyệt", điểm group vào "Đã chấm" chờ người duyệt. Không có gì của cấp 2 tự đi ra Facebook.

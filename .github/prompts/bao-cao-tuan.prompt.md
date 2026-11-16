@@ -2,7 +2,7 @@
 mode: agent
 description: Viết báo cáo tuần từ số liệu đã tính sẵn
 ---
-Đọc file inbox `inbox/reports/RPT-*.json` và các file CSV trong `data/weekly/` (do cấp 1 xuất: báo cáo ngày, lead, content).
+Đọc file inbox `inbox/reports/RPT-*.json` và các file CSV trong `data/weekly/` (cấp 1 L1-06 xuất mỗi Chủ nhật: `bao-cao-ngay.csv` = số theo nick/ngày tính từ Nhật Ký SM, `lead-hunter.csv` = chỉ cột Trạng thái).
 
 **Không tự tính lại số khác với CSV.** Nếu cần tổng/tỷ lệ, chạy `python scripts/weekly_numbers.py` (script tính từ CSV) và chỉ dùng kết quả của nó.
 
