@@ -28,13 +28,13 @@ try {
     Log "Xử lý $rel"
     # Chỉ cho đọc/ghi file và chạy validate; cấm git, mạng, xoá. Kiểm lại tên cờ bằng: copilot --help
     copilot.cmd -p $prompt --no-ask-user `
-      --allow-tool 'write' --allow-tool 'shell(python scripts/validate.py:*)' `
+      --allow-tool 'write' --allow-tool 'shell(py scripts/validate.py:*)' `
       --deny-tool 'shell(git:*)' --deny-tool 'shell(rm:*)' --deny-tool 'shell(Remove-Item:*)' --deny-tool 'shell(curl:*)' 2>&1 |
       Out-File -Append -FilePath $log -Encoding utf8
     if ($LASTEXITCODE -ne 0) { Log "Copilot lỗi (mã $LASTEXITCODE) - có thể hết hạn mức. Dừng."; break }
     $out = "outbox/$kind/$($f.Name)"
     if (-not (Test-Path $out)) { Log "Không thấy $out - bỏ qua lần này."; continue }
-    python scripts/validate.py $out | Out-File -Append -FilePath $log -Encoding utf8
+    py -I -X utf8 scripts/validate.py $out | Out-File -Append -FilePath $log -Encoding utf8
     if ($LASTEXITCODE -ne 0) { Log "File $out không hợp lệ - chuyển sang logs/, không commit."; Move-Item $out (Join-Path $Repo "logs\$($f.BaseName).invalid.json") -Force; continue }
     git add $out
     if ($kind -eq 'reports') { git add ("outbox/reports/" + $f.BaseName + ".md") 2>$null }

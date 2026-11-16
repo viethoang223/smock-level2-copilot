@@ -13,4 +13,4 @@ Viết **3 biến thể** caption tiếng Anh từ `source_caption`, mỗi biế
 
 Ghi `outbox/captions/<task_id>.json` theo `schemas/caption.result.schema.json`. Chép nguyên `image_link` từ file inbox vào kết quả:
 `{"task_id", "kind":"caption", "source_code", "sheet_row", "image_link", "type": "group"|"wall", "variants":[{"angle","caption"}×3], "notes"}`.
-Sau đó chạy `python scripts/validate.py outbox/captions/<task_id>.json`.
+Sau đó chạy `py -I -X utf8 scripts/validate.py outbox/captions/<task_id>.json`.
