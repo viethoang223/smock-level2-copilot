@@ -27,7 +27,7 @@ try {
     if ($DryRun) { Log "[thử] sẽ xử lý $rel"; continue }
     Log "Xử lý $rel"
     # Chỉ cho đọc/ghi file và chạy validate; cấm git, mạng, xoá. Kiểm lại tên cờ bằng: copilot --help
-    copilot -p $prompt --no-ask-user `
+    copilot.cmd -p $prompt --no-ask-user `
       --allow-tool 'write' --allow-tool 'shell(python scripts/validate.py:*)' `
       --deny-tool 'shell(git:*)' --deny-tool 'shell(rm:*)' --deny-tool 'shell(Remove-Item:*)' --deny-tool 'shell(curl:*)' 2>&1 |
       Out-File -Append -FilePath $log -Encoding utf8
