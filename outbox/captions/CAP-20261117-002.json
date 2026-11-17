@@ -1,0 +1,23 @@
+{
+  "task_id": "CAP-20261117-002",
+  "kind": "caption",
+  "source_code": "CG7",
+  "sheet_row": 9,
+  "image_link": "https://drive.google.com/drive/folders/1RND5OsIv9d812QHrExPtPXLUxLSOSZJ_?usp=drive_link",
+  "type": "group",
+  "variants": [
+    {
+      "angle": "Handmade detail",
+      "caption": "Every stitch can give a children's collection its own character. Our Vietnamese artisans create delicate hand smocking, tiny bullion knots, and hand embroidery with careful attention to clean finishing and consistent details. Boutique owners can develop a distinctive style with free unlimited 2D mock-ups before production. MOQ is 15 pieces per style, while production timing is confirmed for each order and our team is committed to on-time delivery. Share your concept with K-Embroidery and let us explore the details for your next collection. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    },
+    {
+      "angle": "Factory craftsmanship",
+      "caption": "Bring a thoughtful design from idea to finished children's wear with K-Embroidery Factory. Our skilled Vietnamese artisans handle hand smocking and hand embroidery, helping boutique and online shop owners build pieces that feel personal and timeless. Start with free unlimited 2D mock-ups, then plan an order from just 15 pieces per style. Production timing is discussed according to your order, with a commitment to deliver on schedule. From a first concept to a coordinated collection, our team supports your private-label direction with care. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    },
+    {
+      "angle": "Boutique collection planning",
+      "caption": "A memorable boutique collection often begins with one beautiful detail. Whether your direction includes delicate smocking, bullion knots, or personalized embroidery, K-Embroidery helps turn your brand vision into children's pieces with a handmade feel. Request free unlimited 2D mock-ups to refine the design, then order from 15 pieces per style. We confirm production timing for each project and stay focused on delivering on time, so your collection planning has a clear next step. Tell us about the style you are developing. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    }
+  ],
+  "notes": "Đã giữ nguyên task_id, source_code, sheet_row, type và image_link từ inbox. Cả 3 biến thể đều nêu MOQ 15 pieces per style, free unlimited 2D mock-ups, production timing theo từng đơn và cam kết giao đúng hẹn; không đưa số điện thoại, giá, thời gian sản xuất cụ thể hoặc phí ship vì không có dữ kiện được phép."
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "CAP-20261117-003",
+  "kind": "caption",
+  "source_code": "CG12",
+  "sheet_row": 14,
+  "image_link": "https://drive.google.com/drive/folders/1ipzIbXCheHdrM6Y2PxTgi0Hiw8-gdzLF?usp=drive_link",
+  "type": "group",
+  "variants": [
+    {
+      "angle": "Timeless boys' boutique set",
+      "caption": "Classic style gets a thoughtful handmade finish in this boys' short set, pairing a crisp white shirt with blue striped shorts and delicate hand smocking. It is a timeless direction for boutiques building a polished children's collection. K-Embroidery supports custom designs, fabrics, and private labels, with an MOQ of 15 pieces per style. Request free unlimited 2D mock-ups before production, then discuss production timing for your order. Our team is committed to delivering on time. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    },
+    {
+      "angle": "Hand-smocked craftsmanship",
+      "caption": "A crisp white shirt, blue striped shorts, and delicate hand smocking create a clean, charming look for a boys' collection. The beauty is in the careful detail: a simple silhouette becomes distinctive through handmade craftsmanship. For wholesale and private-label projects, K-Embroidery offers free unlimited 2D mock-ups and an MOQ of 15 pieces per style. Production timing is confirmed according to each order, with a commitment to on-time delivery. Share your design direction with our team. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    },
+    {
+      "angle": "Private-label collection planning",
+      "caption": "Looking for a refined foundation for your boutique's boys' range? This short set combines a crisp white shirt, blue striped shorts, and delicate hand smocking in a look that feels classic without being ordinary. K-Embroidery can help develop custom designs, fabrics, and private labels from your concept. Start with an MOQ of 15 pieces per style and free unlimited 2D mock-ups before production. We discuss production timing per order and stay committed to delivering on time. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    }
+  ],
+  "notes": "Đã giữ nguyên task_id, source_code, sheet_row, type và image_link từ inbox. Cả 3 biến thể đều giữ đúng sản phẩm short set bé trai với áo sơ mi trắng, quần short sọc xanh và smocking thủ công; đã nêu MOQ 15 pieces per style, free unlimited 2D mock-ups, production timing theo từng đơn và cam kết giao đúng hẹn. Không đưa số điện thoại, giá, thời gian sản xuất cụ thể hoặc phí ship vì không có dữ kiện được phép."
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "CAP-20261117-001",
+  "kind": "caption",
+  "source_code": "CG3",
+  "sheet_row": 5,
+  "image_link": "https://drive.google.com/drive/folders/15gei7f_r188v9K3oJcxslzgj2soR4ED_?usp=drive_link",
+  "type": "group",
+  "variants": [
+    {
+      "angle": "Boutique-ready production",
+      "caption": "Give your boutique collection a distinctive finish with children's smock dresses, rompers, bubbles, and sets made with hand smocking and hand embroidery by Vietnamese artisans. K-Embroidery works directly from its Hanoi factory for wholesale and OEM/private-label orders. Start with an MOQ of 15 pieces per style and use our free unlimited 2D mock-ups to refine your design before production. Production timing is discussed for each order, with a commitment to deliver on time. Worldwide shipping is available; message us for order details. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    },
+    {
+      "angle": "Artisan detail and design",
+      "caption": "Small details can shape an entire children's collection. At K-Embroidery, hand smocking and hand embroidery are created by Vietnamese artisans, while our factory develops wholesale and private-label pieces for boutiques and online shops. Choose an MOQ of 15 pieces per style and request free unlimited 2D mock-ups to explore your design direction before production. We discuss production timing for your order and remain committed to delivering on time. Worldwide shipping is available, with shipping details shared directly. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    },
+    {
+      "angle": "Seasonal collection planning",
+      "caption": "Planning a seasonal children's collection for your boutique? Build around smock dresses, rompers, bubbles, or sets with hand smocking and hand embroidery from K-Embroidery's Hanoi factory. Our wholesale and OEM/private-label service starts at 15 pieces per style, and free unlimited 2D mock-ups help you develop a clear design before production. Production timing is confirmed according to each order, alongside our commitment to deliver on time. We ship worldwide and can share order and shipping details by message. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    }
+  ],
+  "notes": "Đã giữ nguyên image_link, sheet_row và source_code từ inbox. Không đưa số điện thoại vào kết quả. Production timing và phí vận chuyển không có số cụ thể trong dữ kiện nên chỉ nêu sẽ trao đổi theo từng đơn."
+}
