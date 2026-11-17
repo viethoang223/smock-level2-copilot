@@ -1,0 +1,23 @@
+{
+  "task_id": "CAP-20261117-004",
+  "kind": "caption",
+  "source_code": "CG11",
+  "sheet_row": 13,
+  "image_link": "https://drive.google.com/drive/folders/1NWLC2bL5XupElWjyKMXIGThP5oNTviV-?usp=drive_link",
+  "type": "group",
+  "variants": [
+    {
+      "angle": "From mock-up to finished piece",
+      "caption": "From a 2D idea to real fabric, careful stitches, and refined details, your design can become a boutique-quality children's garment with K-Embroidery Factory. Wholesale and private-label brands can start with just 15 pieces per style, with sizes mixed. We provide free unlimited 2D mock-ups so your team can refine the look before production. Share your requirements with us to discuss production timing and shipping, with a commitment to deliver your order on time. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    },
+    {
+      "angle": "Craftsmanship and production support",
+      "caption": "Every finished piece begins with attention to the details: the shape of the design, the fabric, and the hand-smocked or embroidered finish. At K-Embroidery Factory in Vietnam, we support boutiques and online shops with wholesale and OEM production for children's clothing. The MOQ is 15 pieces per style, with mixed sizes accepted, and free unlimited 2D mock-ups help bring your concept into focus. Message us for production timing and order planning—we take care to deliver on time. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    },
+    {
+      "angle": "A practical start for boutique collections",
+      "caption": "Planning a new children's collection for your boutique? Start with your design concept and let K-Embroidery Factory help develop it into real, carefully finished garments. Our wholesale and private-label service offers a 15-piece-per-style MOQ with mixed sizes, plus free unlimited 2D mock-ups for design development. We can discuss production timing, shipping, and the details needed for an on-time delivery based on your order. Build your next collection with a production partner focused on precision. DM or WhatsApp us code {{MA_BAI}} for the catalog"
+    }
+  ],
+  "notes": "Đã giữ nguyên task_id, source_code, sheet_row, image_link và type từ inbox. Không dùng thời gian 6–8 tuần, số điện thoại hoặc thông tin thanh toán vì không được xác nhận trong brand facts; production timing và giao đúng hẹn được nêu ở mức không định lượng."
+}
