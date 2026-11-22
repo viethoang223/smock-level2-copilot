@@ -1,0 +1,7 @@
+{
+  "task_id": "RPT-20261122-001",
+  "kind": "weekly_report",
+  "report_file": "outbox/reports/RPT-20261122-001.md",
+  "numbers_source": "data/weekly/bao-cao-ngay.csv; data/weekly/lead-hunter.csv",
+  "notes": "Số tuần này được tổng hợp trực tiếp từ data/weekly/bao-cao-ngay.csv. Không có dữ liệu tuần trước trong data/weekly/ nên so sánh kỳ trước và KPI để trống/null. Lead-hunter hiện không có dòng dữ liệu Trạng thái."
+}
